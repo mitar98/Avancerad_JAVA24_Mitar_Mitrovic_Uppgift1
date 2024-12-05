@@ -33,10 +33,11 @@ VehicleRentalSystem/
         - - RentalApp.java
 
 ## Använda begrepp (på engelska då det är enklare att förstå)
-Inheritance: Base class Vehicle extended by specific vehicle classes (Car, SUV, Truck, Convertible).
-Interfaces: Rentable interface defines methods for rental functionality.
-Encapsulation: Private fields with getter and setter methods for controlled access.
-Abstraction: Abstract class Vehicle encapsulates common attributes of all vehicles.
+- Inheritance: Base class Vehicle extended by specific vehicle classes (Car, SUV, Truck,     
+  Convertible).
+- Interfaces: Rentable interface defines methods for rental functionality.
+- Encapsulation: Private fields with getter and setter methods for controlled access.
+- Abstraction: Abstract class Vehicle encapsulates common attributes of all vehicles.
 
 ## Author
 Mitar Mitrovic
