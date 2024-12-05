@@ -18,8 +18,8 @@ En enkel konsolbaserad applikation för att hantera en biluthyrningstjänst. Anv
 
 ## Projektets Struktur
 VehicleRentalSystem/
-src/
-  main/
+- src/
+- - main/
     java/
       com/
         vehiclerental/
