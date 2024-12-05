@@ -11,26 +11,26 @@ En enkel konsolbaserad applikation för att hantera en biluthyrningstjänst. Anv
 - Kostnadsberäkning baserad på hyresdagar.
 
 
-## How to Run
+## Hur man startar
 1. Klona repository
 2. Open the project in IntelliJ IDEA.
 3. Kör RentalApp-klassen från paketet com.vehiclerental.
 
 ## Projektets Struktur
 VehicleRentalSystem/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── com/
-│   │   │   │   └── vehiclerental/
-│   │   │   │       ├── Vehicle.java
-│   │   │   │       ├── Car.java
-│   │   │   │       ├── SUV.java
-│   │   │   │       ├── Truck.java
-│   │   │   │       ├── Convertible.java
-│   │   │   │       ├── Rentable.java
-│   │   │   │       ├── RentableVehicle.java
-│   │   │   │       ├── RentalApp.java
+src/
+  main/
+    java/
+      com/
+        vehiclerental/
+            Vehicle.java
+            Car.java
+            SUV.java
+            Truck.java
+            Convertible.java
+            Rentable.java
+            RentableVehicle.java
+            RentalApp.java
 
 ## Använda begrepp (på engelska då det är enklare att förstå)
 Inheritance: Base class Vehicle extended by specific vehicle classes (Car, SUV, Truck, Convertible).
