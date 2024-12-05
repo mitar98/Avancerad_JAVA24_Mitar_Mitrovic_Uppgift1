@@ -1,0 +1,65 @@
+Det här projektet är en enkel konsolbaserad applikation för att hantera uthyrning av fordon. 
+Användaren kan hyra och returnera olika typer av fordon, som bilar, SUV:ar, lastbilar och cabrioleter, samt se vad uthyrningen kostar. 
+Projektet använder grundläggande principer från objektorienterad programmering (OOP) för att göra koden lätt att förstå och bygga vidare på.
+Programmet består av olika delar (klasser) som jobbar tillsammans för att skapa en fungerande applikation. 
+
+Fordon (Vehicle-klassen) Alla fordon delar vissa egenskaper, som modell, registreringsnummer och pris per dag. Dessa gemensamma egenskaper är samlade i en bas-klass som heter Vehicle. 
+Den här klassen är abstrakt, vilket betyder att den inte kan användas direkt, utan bara fungerar som grund för andra klasser.
+
+Exempel:
+En bil är en typ av fordon och delar samma grundegenskaper, men kan ha unika attribut, som antal säten.
+Olika fordonsklasser Projektet har flera specifika typer av fordon:
+
+Car: För vanliga bilar.
+SUV: Terrängbilar med fyrhjulsdrift.
+Truck: Lastbilar med lastkapacitet.
+Convertible: Cabrioleter som har nedfällbara tak.
+Varje klass bygger vidare på Vehicle och lägger till sina egna unika egenskaper. Till exempel har Truck en lastkapacitet, medan Convertible har en egenskap för om den har ett nedfällbart tak.
+
+Interface är som en lista med regler för hur en klass ska fungera. I det här projektet finns Interface Rentable, som säger att alla fordon måste ha metoder för att:
+Hyra fordon.
+Returnera fordon.
+Beräkna kostnaden för uthyrningen.
+
+Huvudprogrammet RentalApp är själva programmet man kör. Här interagerar användaren med systemet. Användaren kan:
+Se vilka fordon som finns tillgängliga.
+Hyra ett fordon genom att välja det från en lista.
+Returnera ett fordon efter att ha hyrt det.
+Se kostnaden för uthyrningen.
+
+Vad används objektorienterad programmering till här?
+Arv (Inheritance) Alla specifika fordonstyper (t.ex. Car, SUV) ärver egenskaper och metoder från basklassen Vehicle. Det betyder att vi slipper skriva samma kod flera gånger. Vi lägger bara till det som är unikt för varje fordonstyp.
+
+Exempel:
+public class Car extends RentableVehicle {
+    private int numberOfSeats;
+
+    public Car(String model, String registrationNumber, double rentalPricePerDay, int numberOfSeats) {
+        super(model, registrationNumber, rentalPricePerDay);
+        this.numberOfSeats = numberOfSeats;
+    }
+}
+
+Inkapsling (Encapsulation) Alla egenskaper, som modell och registreringsnummer, är privata i klasserna. Det betyder att de inte kan ändras direkt av användaren. Istället används metoder (getters och setters) för att komma åt eller ändra dessa värden på ett kontrollerat sätt.
+Exempel:
+private String model;
+
+public String getModel() {
+    return model;
+}
+
+Abstraktion (Abstraction) Basklassen Vehicle är abstrakt. Den innehåller gemensamma egenskaper och metoder för alla fordon, men implementerar inte allt. 
+Detta gör det enklare att fokusera på de unika delarna av varje specifik fordonstyp.
+
+Gränssnitt (Interface) Gränssnittet Rentable används för att säkerställa att alla fordonstyper har metoder för att hyra och returnera fordon samt beräkna kostnader.
+Exempel:
+public interface Rentable {
+    void rentVehicle(int days);
+    void returnVehicle();
+    double calculateRentalCost();
+}
+
+Det här projektet visar hur OOP kan användas för att organisera koden på ett sätt som gör den lätt att förstå och underhålla.
+Genom att använda arv, inkapsling, abstraktion och interface är det enkelt att lägga till nya fordonstyper eller funktioner i framtiden. 
+Det här är ett bra exempel på hur man kan bygga ett system som är flexibelt och fungerande.
+
