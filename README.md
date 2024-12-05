@@ -20,17 +20,17 @@ En enkel konsolbaserad applikation för att hantera en biluthyrningstjänst. Anv
 VehicleRentalSystem/
 - src/
 - - main/
-    java/
-      com/
-        vehiclerental/
-            Vehicle.java
-            Car.java
-            SUV.java
-            Truck.java
-            Convertible.java
-            Rentable.java
-            RentableVehicle.java
-            RentalApp.java
+  - - java/
+    - - com/
+      - - vehiclerental/
+        - - Vehicle.java
+        - - Car.java
+        - - SUV.java
+        - - Truck.java
+        - - Convertible.java
+        - - Rentable.java
+        - - RentableVehicle.java
+        - - RentalApp.java
 
 ## Använda begrepp (på engelska då det är enklare att förstå)
 Inheritance: Base class Vehicle extended by specific vehicle classes (Car, SUV, Truck, Convertible).
