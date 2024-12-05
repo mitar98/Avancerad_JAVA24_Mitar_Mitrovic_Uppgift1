@@ -13,7 +13,7 @@ En enkel konsolbaserad applikation för att hantera en biluthyrningstjänst. Anv
 
 ## Hur man startar
 1. Klona repository
-2. Open the project in IntelliJ IDEA.
+2. Öppna projektet i IntelliJ IDEA.
 3. Kör RentalApp-klassen från paketet com.vehiclerental.
 
 ## Projektets Struktur
