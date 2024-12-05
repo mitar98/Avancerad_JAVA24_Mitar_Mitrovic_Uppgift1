@@ -16,7 +16,7 @@ En enkel konsolbaserad applikation för att hantera en biluthyrningstjänst. Anv
 2. Open the project in IntelliJ IDEA.
 3. Kör RentalApp-klassen från paketet com.vehiclerental.
 
-##Projektets Struktur
+## Projektets Struktur
 VehicleRentalSystem/
 ├── src/
 │   ├── main/
@@ -32,11 +32,11 @@ VehicleRentalSystem/
 │   │   │   │       ├── RentableVehicle.java
 │   │   │   │       ├── RentalApp.java
 
-##Använda begrepp (på engelska då det är enklare att förstå)
+## Använda begrepp (på engelska då det är enklare att förstå)
 Inheritance: Base class Vehicle extended by specific vehicle classes (Car, SUV, Truck, Convertible).
 Interfaces: Rentable interface defines methods for rental functionality.
 Encapsulation: Private fields with getter and setter methods for controlled access.
 Abstraction: Abstract class Vehicle encapsulates common attributes of all vehicles.
 
-Author
-<Mitar Mitrovic> ```
+## Author
+Mitar Mitrovic
